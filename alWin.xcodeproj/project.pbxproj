@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56AD1DA91F72D44200C526FC /* firstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AD1DA81F72D44200C526FC /* firstViewController.swift */; };
-		56B60F601F72DD0800CF5E48 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B60F5F1F72DD0800CF5E48 /* ThirdViewController.swift */; };
 		56C0EEB91F72540B00323DEA /* EightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0EEAF1F72540B00323DEA /* EightViewController.swift */; };
 		56C0EEBA1F72540B00323DEA /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0EEB01F72540B00323DEA /* FifthViewController.swift */; };
 		56C0EEBC1F72540B00323DEA /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C0EEB21F72540B00323DEA /* FourthViewController.swift */; };
@@ -56,17 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		56AD1DA81F72D44200C526FC /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
-		56B60F5F1F72DD0800CF5E48 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		56C0EEAF1F72540B00323DEA /* EightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EightViewController.swift; path = ../EightViewController.swift; sourceTree = "<group>"; };
-		56C0EEB01F72540B00323DEA /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FifthViewController.swift; path = ../FifthViewController.swift; sourceTree = "<group>"; };
-		56C0EEB21F72540B00323DEA /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourthViewController.swift; path = ../FourthViewController.swift; sourceTree = "<group>"; };
+		56C0EEAF1F72540B00323DEA /* EightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightViewController.swift; sourceTree = "<group>"; };
+		56C0EEB01F72540B00323DEA /* FifthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		56C0EEB21F72540B00323DEA /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		56C0EEB31F72540B00323DEA /* firstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstViewController.swift; sourceTree = "<group>"; };
-		56C0EEB41F72540B00323DEA /* NinethViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NinethViewController.swift; path = ../NinethViewController.swift; sourceTree = "<group>"; };
-		56C0EEB51F72540B00323DEA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
-		56C0EEB61F72540B00323DEA /* SeventhViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SeventhViewController.swift; path = ../SeventhViewController.swift; sourceTree = "<group>"; };
-		56C0EEB71F72540B00323DEA /* SixthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SixthViewController.swift; path = ../SixthViewController.swift; sourceTree = "<group>"; };
-		56C0EEB81F72540B00323DEA /* WatchVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WatchVideoViewController.swift; path = ../WatchVideoViewController.swift; sourceTree = "<group>"; };
+		56C0EEB41F72540B00323DEA /* NinethViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NinethViewController.swift; sourceTree = "<group>"; };
+		56C0EEB51F72540B00323DEA /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		56C0EEB61F72540B00323DEA /* SeventhViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeventhViewController.swift; sourceTree = "<group>"; };
+		56C0EEB71F72540B00323DEA /* SixthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
+		56C0EEB81F72540B00323DEA /* WatchVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchVideoViewController.swift; sourceTree = "<group>"; };
 		56C0EED51F72D33800323DEA /* a1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "a1@2x.png"; sourceTree = "<group>"; };
 		56C0EED61F72D33800323DEA /* a2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a2.png; sourceTree = "<group>"; };
 		56C0EED71F72D33800323DEA /* a3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a3.png; sourceTree = "<group>"; };
@@ -148,11 +144,9 @@
 				56C0EEB21F72540B00323DEA /* FourthViewController.swift */,
 				56C0EEB01F72540B00323DEA /* FifthViewController.swift */,
 				56C0EEB71F72540B00323DEA /* SixthViewController.swift */,
-				56AD1DA81F72D44200C526FC /* firstViewController.swift */,
 				56C0EEB61F72540B00323DEA /* SeventhViewController.swift */,
 				56C0EEAF1F72540B00323DEA /* EightViewController.swift */,
 				56C0EEB41F72540B00323DEA /* NinethViewController.swift */,
-				56B60F5F1F72DD0800CF5E48 /* ThirdViewController.swift */,
 				56C0EEB81F72540B00323DEA /* WatchVideoViewController.swift */,
 				56FAA1301F71D8C900D0767C /* AppDelegate.swift */,
 				56FAA1341F71D8C900D0767C /* Actions.sks */,
@@ -340,7 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56AD1DA91F72D44200C526FC /* firstViewController.swift in Sources */,
 				56C0EEC11F72540B00323DEA /* SixthViewController.swift in Sources */,
 				56C0EEBF1F72540B00323DEA /* SecondViewController.swift in Sources */,
 				56C0EEBE1F72540B00323DEA /* NinethViewController.swift in Sources */,
@@ -350,7 +343,6 @@
 				56FAA1371F71D8C900D0767C /* GameScene.swift in Sources */,
 				56FAA1391F71D8C900D0767C /* GameViewController.swift in Sources */,
 				56C0EEBC1F72540B00323DEA /* FourthViewController.swift in Sources */,
-				56B60F601F72DD0800CF5E48 /* ThirdViewController.swift in Sources */,
 				56C0EEB91F72540B00323DEA /* EightViewController.swift in Sources */,
 				56C0EEBD1F72540B00323DEA /* firstViewController.swift in Sources */,
 				56FAA1311F71D8C900D0767C /* AppDelegate.swift in Sources */,
