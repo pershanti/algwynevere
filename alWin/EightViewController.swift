@@ -21,7 +21,7 @@ class EightViewController: UIViewController {
     //*****Button OULETS************//
     @IBOutlet weak var watch: UIButton!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+   
     @IBOutlet weak var messageLabel: UILabel!
     
     //User Input variables
@@ -67,7 +67,6 @@ class EightViewController: UIViewController {
         } else {
             messageLabel.isHidden = false
             messageLabel.text = "You need to Study More"
-            tryAgain.isHidden = false
             if triesCount == 3 {
                 watch.isHidden = false
             }

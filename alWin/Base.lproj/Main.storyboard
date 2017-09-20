@@ -24,10 +24,14 @@
                     </view>
                     <connections>
                         <segue destination="kwE-AI-7hG" kind="presentation" identifier="none" id="jgq-KQ-JBB"/>
+                        <segue destination="3vr-DS-oVD" kind="presentation" identifier="toFourth" id="Jf3-Cq-28g"/>
+                        <segue destination="IeW-Uf-7sf" kind="presentation" identifier="toSixth" id="rRi-9M-bJv"/>
+                        <segue destination="mrB-cJ-yGA" kind="presentation" identifier="toNinth" id="Jup-Y3-XsE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53" y="-103"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="YFl-dC-pku">
@@ -156,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgr-DT-bpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="724.58770614692662" y="704.79999999999995"/>
+            <point key="canvasLocation" x="386" y="1332"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Xv5-re-pNa">
@@ -212,17 +216,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ie-ig-r2D">
-                                <rect key="frame" x="0.0" y="307" width="197" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Next Challenge">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zGd-Yw-m8z" kind="presentation" id="Prt-Vt-hoX"/>
-                                </connections>
-                            </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJn-Qi-anq">
                                 <rect key="frame" x="257" y="316" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -231,7 +224,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="OLY-b7-ECK" kind="presentation" id="uLc-uJ-580"/>
+                                    <segue destination="OLY-b7-ECK" kind="presentation" identifier="watchSegue" id="uLc-uJ-580"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -248,11 +241,13 @@
                         <outlet property="answer2" destination="YJi-Ez-NAZ" id="F5t-GS-9Yk"/>
                         <outlet property="answer3" destination="kOn-CL-JrR" id="39F-Ma-62W"/>
                         <outlet property="messageLabel" destination="vfp-Fl-ITN" id="wes-lx-wgQ"/>
+                        <outlet property="watch" destination="yJn-Qi-anq" id="WSH-8y-brm"/>
+                        <segue destination="BV1-FR-VrT" kind="presentation" identifier="home1" id="OuF-Kf-l1Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wu1-11-Ot4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1432.5337331334333" y="-308"/>
+            <point key="canvasLocation" x="1417" y="-103"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="CEk-bJ-qhm">
@@ -277,14 +272,9 @@
                                 <state key="normal" title="Watch a Video">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-b7-vUL">
-                                <rect key="frame" x="558" y="302" width="89" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <state key="normal" title="RUN">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <connections>
+                                    <segue destination="OLY-b7-ECK" kind="presentation" id="Xq4-9Z-4WZ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ZF-cX-uI8">
                                 <rect key="frame" x="425" y="162" width="199" height="30"/>
@@ -308,13 +298,33 @@
                                 <color key="textColor" red="0.9775590931" green="1" blue="0.98179784250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rn8-e5-eiG">
+                                <rect key="frame" x="535" y="290" width="89" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="RUN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="3vr-DS-oVD" eventType="touchUpInside" id="Bzc-Ws-mXb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="0ZF-cX-uI8" id="dl7-JD-Zed"/>
+                        <outlet property="back" destination="xY8-2l-Nfx" id="aaf-w9-Bgb"/>
+                        <outlet property="messageLabel" destination="QLW-Bo-tfY" id="Ney-sQ-8h7"/>
+                        <outlet property="watch" destination="fqG-1L-ndy" id="C4q-NA-urh"/>
+                        <segue destination="JJI-Mq-sRm" kind="presentation" identifier="fifth" id="4hK-7A-SKC"/>
+                        <segue destination="BV1-FR-VrT" kind="presentation" id="gOj-IK-gX7"/>
+                        <segue destination="t7d-QW-bkz" kind="show" identifier="win" id="2n3-ir-WeZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJj-dv-NtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2112" y="-294"/>
+            <point key="canvasLocation" x="964" y="988"/>
         </scene>
         <!--Sixth View Controller-->
         <scene sceneID="Ldq-S0-5WK">
@@ -332,15 +342,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKN-Oe-1ca">
-                                <rect key="frame" x="355" y="307" width="160" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rtf-B1-MSW">
-                                <rect key="frame" x="187" y="295" width="167" height="30"/>
+                                <rect key="frame" x="250" y="316" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Watch a Video">
@@ -356,25 +359,49 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="me7-lk-8OW">
-                                <rect key="frame" x="558" y="307" width="89" height="65"/>
+                                <rect key="frame" x="542" y="297" width="89" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <state key="normal" title="RUN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="IeW-Uf-7sf" eventType="touchUpInside" id="Qaa-h4-xrg"/>
+                                </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sye-D5-XKV">
+                                <rect key="frame" x="323" y="64" width="315" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.9775590931" green="1" blue="0.98179784250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-aL-Gyg">
+                                <rect key="frame" x="420" y="197" width="143" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="3eM-aL-Gyg" id="LQw-Hc-rcA"/>
+                        <outlet property="back" destination="GxE-l9-sJN" id="FIp-aJ-26K"/>
+                        <outlet property="messageLabel" destination="Sye-D5-XKV" id="PYy-q2-0uN"/>
+                        <outlet property="watch" destination="Rtf-B1-MSW" id="zfb-qF-Vbe"/>
+                        <segue destination="XY4-2z-gMI" kind="presentation" identifier="seventh" id="gjC-Vs-Vzy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hm0-jy-g1u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2747.6761619190406" y="-258.39999999999998"/>
+            <point key="canvasLocation" x="1020" y="1729"/>
         </scene>
-        <!--Eight View Controller-->
+        <!--Nineth View Controller-->
         <scene sceneID="tUv-BB-LA3">
             <objects>
-                <viewController id="mrB-cJ-yGA" customClass="EightViewController" customModule="alWin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mrB-cJ-yGA" customClass="NinethViewController" customModule="alWin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="buF-vO-mWL"/>
                         <viewControllerLayoutGuide type="bottom" id="tnB-c4-ahM"/>
@@ -383,10 +410,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a8.png" translatesAutoresizingMaskIntoConstraints="NO" id="etl-Iv-PMe">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1F-KY-igu">
                                 <rect key="frame" x="480" y="172" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -402,6 +425,9 @@
                                 <state key="normal" title="RUN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="mrB-cJ-yGA" eventType="touchUpInside" id="mrd-27-czd"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xIW-Nv-qBL">
                                 <rect key="frame" x="431" y="289" width="169" height="30"/>
@@ -425,18 +451,27 @@
                                 <color key="textColor" red="0.9775590931" green="1" blue="0.98179784250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a8.png" translatesAutoresizingMaskIntoConstraints="NO" id="etl-Iv-PMe">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="xIW-Nv-qBL" id="onq-Kk-s3Z"/>
+                        <outlet property="back" destination="W1F-KY-igu" id="7gn-Po-DQf"/>
+                        <segue destination="bBn-y2-sYp" kind="presentation" identifier="eighth" id="YzZ-Zx-p2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvX-0s-1R7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3435" y="-258"/>
+            <point key="canvasLocation" x="1020" y="2486"/>
         </scene>
-        <!--Nineth View Controller-->
+        <!--Eight View Controller-->
         <scene sceneID="FQ4-Pd-Dav">
             <objects>
-                <viewController id="bBn-y2-sYp" customClass="NinethViewController" customModule="alWin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bBn-y2-sYp" customClass="EightViewController" customModule="alWin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4kI-uY-5At"/>
                         <viewControllerLayoutGuide type="bottom" id="Rcb-bZ-Xae"/>
@@ -478,6 +513,9 @@
                                 <state key="normal" title="RUN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="bBn-y2-sYp" eventType="touchUpInside" id="QxC-kq-Fvl"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DoX-R7-nWN">
                                 <rect key="frame" x="332" y="65" width="315" height="48"/>
@@ -489,10 +527,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="vby-7r-TdI" id="ewy-FM-cLv"/>
+                        <outlet property="answer2" destination="gj8-Nm-IV0" id="bi6-lp-yam"/>
+                        <outlet property="messageLabel" destination="DoX-R7-nWN" id="uwk-mf-Kah"/>
+                        <outlet property="watch" destination="sIA-cM-80y" id="pp0-tc-6Gt"/>
+                        <segue destination="t7d-QW-bkz" kind="show" identifier="youwin" id="mkb-3f-JgY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FAq-hf-oMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3434.9325337331338" y="509.60000000000002"/>
+            <point key="canvasLocation" x="1728" y="2486"/>
         </scene>
         <!--Seventh View Controller-->
         <scene sceneID="ulK-OO-pBr">
@@ -525,14 +570,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFQ-XS-wkY">
-                                <rect key="frame" x="0.0" y="319" width="197" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Back to the forest">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgH-RP-uCx">
                                 <rect key="frame" x="558" y="302" width="89" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -540,9 +577,12 @@
                                 <state key="normal" title="RUN">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="XY4-2z-gMI" eventType="touchUpInside" id="HLU-3D-kCH"/>
+                                </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9s-CF-cIz">
-                                <rect key="frame" x="332" y="66" width="315" height="48"/>
+                                <rect key="frame" x="332" y="62" width="315" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" red="0.9775590931" green="1" blue="0.98179784250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -551,10 +591,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="80F-Eg-imw" id="7gW-7A-QHj"/>
+                        <outlet property="messageLabel" destination="K9s-CF-cIz" id="wOe-3B-Im7"/>
+                        <outlet property="watch" destination="YAN-CP-7nG" id="hs8-wk-sO3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBa-il-JKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2767" y="470"/>
+            <point key="canvasLocation" x="1729" y="1729"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0kF-RS-3D0">
+            <objects>
+                <viewController id="t7d-QW-bkz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AhN-OB-aGj"/>
+                        <viewControllerLayoutGuide type="bottom" id="izB-FL-y9l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ze-z0-Exn">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youwin" translatesAutoresizingMaskIntoConstraints="NO" id="dvV-cB-9vY">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dvV-cB-9vY" firstAttribute="leading" secondItem="9ze-z0-Exn" secondAttribute="leading" id="32n-YT-wFV"/>
+                            <constraint firstAttribute="trailing" secondItem="dvV-cB-9vY" secondAttribute="trailing" id="7Y9-49-AXE"/>
+                            <constraint firstItem="dvV-cB-9vY" firstAttribute="top" secondItem="9ze-z0-Exn" secondAttribute="top" id="AQU-c3-HQ0"/>
+                            <constraint firstItem="izB-FL-y9l" firstAttribute="top" secondItem="dvV-cB-9vY" secondAttribute="bottom" id="zTd-xU-HgG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khg-5g-FIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798.9505247376314" y="1592.8"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="PDU-dv-PGa">
@@ -607,21 +681,60 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="a5.png" translatesAutoresizingMaskIntoConstraints="NO" id="V9u-5U-ZuK">
-                                <rect key="frame" x="-9" y="0.0" width="676" height="375"/>
+                                <rect key="frame" x="-14" y="0.0" width="676" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3g-yy-H6C">
+                                <rect key="frame" x="263" y="311" width="167" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Watch a Video">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkE-tK-rxc">
+                                <rect key="frame" x="427" y="201" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2i-b7-vUL">
+                                <rect key="frame" x="509" y="283" width="89" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="RUN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="runButtonWasPressed:" destination="JJI-Mq-sRm" eventType="touchUpInside" id="89M-vP-G8b"/>
+                                    <action selector="runButtonWasPressed:" destination="3vr-DS-oVD" eventType="touchUpInside" id="XMQ-Ac-AmR"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXR-Hn-3bF">
+                                <rect key="frame" x="324" y="54" width="315" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.9775590931" green="1" blue="0.98179784250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="kkE-tK-rxc" id="c59-uS-tvN"/>
+                        <outlet property="messageLabel" destination="pXR-Hn-3bF" id="aKj-ky-X6k"/>
+                        <outlet property="watch" destination="j3g-yy-H6C" id="xNR-BE-x3A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STY-Lb-fNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134.1829085457275" y="445.60000000000002"/>
+            <point key="canvasLocation" x="1625" y="940"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="mF4-Fx-q1U">
             <objects>
-                <viewController id="zGd-Yw-m8z" customClass="ThirdViewController" customModule="alWin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zGd-Yw-m8z" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OsV-XO-fSD"/>
                         <viewControllerLayoutGuide type="bottom" id="wMe-q5-RDZ"/>
@@ -642,7 +755,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="runButtonWasPressed:" destination="zGd-Yw-m8z" eventType="touchUpInside" id="7qV-B6-Um7"/>
+                                    <action selector="runButtonWasPressed:" destination="zGd-Yw-m8z" eventType="touchUpInside" id="uZE-Yl-9Sh"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96G-j1-suD">
@@ -653,17 +766,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uRS-hJ-dFS">
-                                <rect key="frame" x="8" y="307" width="217" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Back to the the forest">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BV1-FR-VrT" kind="presentation" id="erG-m2-XUZ"/>
-                                </connections>
-                            </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sL-8O-Mq9">
                                 <rect key="frame" x="340" y="61" width="307" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -671,13 +773,33 @@
                                 <color key="textColor" red="0.9775590931" green="1" blue="0.98179784250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bp6-5r-2h5">
+                                <rect key="frame" x="521" y="156" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXi-XY-Es0">
+                                <rect key="frame" x="521" y="111" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1" destination="hXi-XY-Es0" id="0kL-do-LM7"/>
+                        <outlet property="answer2" destination="Bp6-5r-2h5" id="yOw-VT-fWJ"/>
+                        <outlet property="messageLabel" destination="6sL-8O-Mq9" id="MSH-76-aLp"/>
+                        <outlet property="watch" destination="96G-j1-suD" id="Hj2-wo-OTN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1h-w8-aLF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1444.2278860569716" y="496.80000000000001"/>
+            <point key="canvasLocation" x="2122" y="-103"/>
         </scene>
     </scenes>
     <resources>
@@ -690,8 +812,11 @@
         <image name="a7.png" width="2208" height="1242"/>
         <image name="a8.png" width="2208" height="1242"/>
         <image name="a9.png" width="2208" height="1242"/>
+        <image name="youwin" width="2208" height="1242"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="OuF-Kf-l1Z"/>
         <segue reference="uLc-uJ-580"/>
+        <segue reference="2n3-ir-WeZ"/>
     </inferredMetricsTieBreakers>
 </document>

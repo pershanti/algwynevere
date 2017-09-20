@@ -60,7 +60,6 @@ class SecondViewController: UIViewController {
         if correct == true {
             let message = "You answer correct"
             messageLabel.text = message
-            back.isHidden = false
             messageLabel.isHidden = false
             
         } else {
@@ -73,6 +72,7 @@ class SecondViewController: UIViewController {
         }
         results = [String]()
         correct = true
+        performSegue(withIdentifier: "home1", sender: nil)
         
     }
     
@@ -82,10 +82,12 @@ class SecondViewController: UIViewController {
             let destination = segue.destination as! WatchVideoViewController
             destination.videoSearch = "module operation in python"
             
-        } else if segue.identifier == "nextSegue" {
-            _ = segue.destination as! SecondViewController
         }
-    
+        else if segue.identifier == "home1"{
+            let target = segue.destination as! GameViewController
+            target.showSecondScene()
+        }
+
     }
     
     @IBAction func tryAgainButton(_ sender: UIButton) {
@@ -98,11 +100,6 @@ class SecondViewController: UIViewController {
     
     @IBAction func watchVideo(_ sender: UIButton) {
         print("watch again Button was pressed")
-    }
-    
-    @IBAction func backtoField(_ sender: UIButton) {
-        print("back")
-        dismiss(animated: true, completion: nil)
     }
 
 

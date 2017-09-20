@@ -21,7 +21,7 @@ class SixthViewController: UIViewController {
     //*****Button OULETS************//
     @IBOutlet weak var watch: UIButton!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+   
     @IBOutlet weak var messageLabel: UILabel!
     
     
@@ -60,13 +60,15 @@ class SixthViewController: UIViewController {
         } else {
             messageLabel.isHidden = false
             messageLabel.text = "You need to Study More"
-            tryAgain.isHidden = false
+          
             if triesCount == 3 {
                 watch.isHidden = false
             }
         }
     
         correct = true
+        performSegue(withIdentifier: "seventh", sender: nil)
+
         
     }
     
@@ -80,11 +82,6 @@ class SixthViewController: UIViewController {
         print("watch again Button was pressed")
     }
     
-    @IBAction func backtoField(_ sender: UIButton) {
-        print("back")
-        dismiss(animated: true, completion: nil)
-    }
-
 
 
 

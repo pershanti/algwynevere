@@ -16,7 +16,7 @@ class FourthViewController: UIViewController {
     //*****Button OULETS************//
     @IBOutlet weak var watch: UIButton!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+ 
     @IBOutlet weak var messageLabel: UILabel!
     
     //User Input variables
@@ -54,13 +54,15 @@ class FourthViewController: UIViewController {
         } else {
             messageLabel.isHidden = false
             messageLabel.text = "You need to Study More"
-            tryAgain.isHidden = false
+    
             if triesCount == 3 {
                 watch.isHidden = false
             }
         }
         
         correct = true
+        performSegue(withIdentifier: "win", sender: nil)
+
         
     }
     
@@ -70,16 +72,20 @@ class FourthViewController: UIViewController {
     
     }
     
-    
-    @IBAction func watchVideo(_ sender: UIButton) {
-        print("watch again Button was pressed")
-    }
-    
-    @IBAction func backtoField(_ sender: UIButton) {
-        print("back")
-        dismiss(animated: true, completion: nil)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "watchSegue" {
+            let destination = segue.destination as! WatchVideoViewController
+            destination.videoSearch = "if statement in python"
+            
+        }
+        
     }
 
-
+    
+    
+//    @IBAction func watchVideo(_ sender: UIButton) {
+//        print("watch again Button was pressed")
+//    }
+    
 
 }

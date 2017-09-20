@@ -14,14 +14,14 @@ class ThirdViewController: UIViewController {
 //    y = false
 //    x = y
 //    y = true
-//    x # true
+//    x # false
 //    y # true
 //    #video variables and reassignment
     
     //*****Button OULETS************//
     @IBOutlet weak var watch: UIButton!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+ 
     @IBOutlet weak var messageLabel: UILabel!
     
     //User Input variables
@@ -38,6 +38,13 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Loaded")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "home1"{
+            let target = segue.destination as! GameViewController
+            target.showSecondScene()
+        }
     }
 
     //Go button check the answers
@@ -61,16 +68,19 @@ class ThirdViewController: UIViewController {
             let message = "You answer correct"
             messageLabel.text = message
             back.isHidden = false
+            messageLabel.isHidden = false
             
         } else {
+             messageLabel.isHidden = false
             messageLabel.text = "You need to Study More"
-            tryAgain.isHidden = false
+        
             if triesCount == 3 {
                 watch.isHidden = false
             }
         }
         results = [String]()
         correct = true
+        
         
     }
     

@@ -1,21 +1,33 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E3EC14B6A782F1C6DCB06EB71D58B179196C9C1C",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "04072A1D18FEE93773C17CD9C2B7F65A4FEAF85B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "D0B1D6A350523D2C64ADAD67457465FBD1F70D08" : 9223372036854775807,
-    "E3EC14B6A782F1C6DCB06EB71D58B179196C9C1C" : 9223372036854775807
+    "E3EC14B6A782F1C6DCB06EB71D58B179196C9C1C" : 9223372036854775807,
+    "04072A1D18FEE93773C17CD9C2B7F65A4FEAF85B" : 9223372036854775807,
+    "D0B1D6A350523D2C64ADAD67457465FBD1F70D08" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "749E101C-93FE-48FE-9813-2DD3792741D7",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "D0B1D6A350523D2C64ADAD67457465FBD1F70D08" : "",
-    "E3EC14B6A782F1C6DCB06EB71D58B179196C9C1C" : "alwin\/"
+    "E3EC14B6A782F1C6DCB06EB71D58B179196C9C1C" : "alwin\/",
+    "04072A1D18FEE93773C17CD9C2B7F65A4FEAF85B" : "..\/Downloads\/shantini-algwyn",
+    "D0B1D6A350523D2C64ADAD67457465FBD1F70D08" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "alWin",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "alWin.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pershanti\/algwynevere.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "04072A1D18FEE93773C17CD9C2B7F65A4FEAF85B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pershanti\/algwynevere.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "04072A1D18FEE93773C17CD9C2B7F65A4FEAF85B"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pershanti\/ios.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

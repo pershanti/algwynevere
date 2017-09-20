@@ -17,7 +17,7 @@ class SeventhViewController: UIViewController {
     //*****Button OULETS************//
     @IBOutlet weak var watch: UIButton!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+  
     @IBOutlet weak var messageLabel: UILabel!
     
     //User Input variables
@@ -31,6 +31,12 @@ class SeventhViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "home3"{
+            let target = segue.destination as! GameViewController
+            target.showSecondScene()
+        }
     }
 
     //Go button check the answers
@@ -53,13 +59,14 @@ class SeventhViewController: UIViewController {
         } else {
             messageLabel.isHidden = false
             messageLabel.text = "You need to Study More"
-            tryAgain.isHidden = false
+            
             if triesCount == 3 {
                 watch.isHidden = false
             }
         }
         
         correct = true
+        performSegue(withIdentifier: "home3", sender: nil)
         
     }
     
@@ -72,10 +79,5 @@ class SeventhViewController: UIViewController {
         print("watch again Button was pressed")
     }
     
-    @IBAction func backtoField(_ sender: UIButton) {
-        print("back")
-        dismiss(animated: true, completion: nil)
-    }
-
 
 }

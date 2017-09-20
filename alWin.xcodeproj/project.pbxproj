@@ -27,13 +27,19 @@
 		56C0EEE61F72D33800323DEA /* a9.png in Resources */ = {isa = PBXBuildFile; fileRef = 56C0EEDD1F72D33800323DEA /* a9.png */; };
 		56FAA1311F71D8C900D0767C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FAA1301F71D8C900D0767C /* AppDelegate.swift */; };
 		56FAA1351F71D8C900D0767C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 56FAA1341F71D8C900D0767C /* Actions.sks */; };
-		56FAA1371F71D8C900D0767C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FAA1361F71D8C900D0767C /* GameScene.swift */; };
-		56FAA1391F71D8C900D0767C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FAA1381F71D8C900D0767C /* GameViewController.swift */; };
 		56FAA13C1F71D8C900D0767C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FAA13A1F71D8C900D0767C /* Main.storyboard */; };
 		56FAA13E1F71D8C900D0767C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56FAA13D1F71D8C900D0767C /* Assets.xcassets */; };
 		56FAA1411F71D8C900D0767C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56FAA13F1F71D8C900D0767C /* LaunchScreen.storyboard */; };
 		56FAA14C1F71D8C900D0767C /* alWinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FAA14B1F71D8C900D0767C /* alWinTests.swift */; };
 		56FAA1571F71D8C900D0767C /* alWinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FAA1561F71D8C900D0767C /* alWinUITests.swift */; };
+		7F49982C1F72FD9700D2B5F4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4998271F72FD9700D2B5F4 /* GameViewController.swift */; };
+		7F49982D1F72FD9700D2B5F4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4998281F72FD9700D2B5F4 /* GameScene.swift */; };
+		7F49982E1F72FD9700D2B5F4 /* FourthGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4998291F72FD9700D2B5F4 /* FourthGameScene.swift */; };
+		7F49982F1F72FD9700D2B5F4 /* ThirdGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F49982A1F72FD9700D2B5F4 /* ThirdGameScene.swift */; };
+		7F4998301F72FD9700D2B5F4 /* SecondGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F49982B1F72FD9700D2B5F4 /* SecondGameScene.swift */; };
+		7F4998341F730A6200D2B5F4 /* youwin.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4998311F730A6200D2B5F4 /* youwin.png */; };
+		7F4998351F730A6200D2B5F4 /* youwin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4998321F730A6200D2B5F4 /* youwin@2x.png */; };
+		7F4998361F730A6200D2B5F4 /* youwin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4998331F730A6200D2B5F4 /* youwin@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +81,6 @@
 		56FAA12D1F71D8C900D0767C /* alWin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alWin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FAA1301F71D8C900D0767C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56FAA1341F71D8C900D0767C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		56FAA1361F71D8C900D0767C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		56FAA1381F71D8C900D0767C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		56FAA13B1F71D8C900D0767C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56FAA13D1F71D8C900D0767C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56FAA1401F71D8C900D0767C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 		56FAA1521F71D8C900D0767C /* alWinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = alWinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FAA1561F71D8C900D0767C /* alWinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alWinUITests.swift; sourceTree = "<group>"; };
 		56FAA1581F71D8C900D0767C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4998271F72FD9700D2B5F4 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = "../../../Downloads/shantini-algwyn/alWin/GameViewController.swift"; sourceTree = "<group>"; };
+		7F4998281F72FD9700D2B5F4 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = "../../../Downloads/shantini-algwyn/alWin/GameScene.swift"; sourceTree = "<group>"; };
+		7F4998291F72FD9700D2B5F4 /* FourthGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FourthGameScene.swift; path = "../../../Downloads/shantini-algwyn/alWin/FourthGameScene.swift"; sourceTree = "<group>"; };
+		7F49982A1F72FD9700D2B5F4 /* ThirdGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdGameScene.swift; path = "../../../Downloads/shantini-algwyn/alWin/ThirdGameScene.swift"; sourceTree = "<group>"; };
+		7F49982B1F72FD9700D2B5F4 /* SecondGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondGameScene.swift; path = "../../../Downloads/shantini-algwyn/alWin/SecondGameScene.swift"; sourceTree = "<group>"; };
+		7F4998311F730A6200D2B5F4 /* youwin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = youwin.png; path = ../../../Downloads/moreMedia/youwin.png; sourceTree = "<group>"; };
+		7F4998321F730A6200D2B5F4 /* youwin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "youwin@2x.png"; path = "../../../Downloads/moreMedia/youwin@2x.png"; sourceTree = "<group>"; };
+		7F4998331F730A6200D2B5F4 /* youwin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "youwin@3x.png"; path = "../../../Downloads/moreMedia/youwin@3x.png"; sourceTree = "<group>"; };
 		7F49D0481F72DB99008ACCDD /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,14 +158,20 @@
 				56C0EEB71F72540B00323DEA /* SixthViewController.swift */,
 				56C0EEB61F72540B00323DEA /* SeventhViewController.swift */,
 				56C0EEAF1F72540B00323DEA /* EightViewController.swift */,
+				7F4998271F72FD9700D2B5F4 /* GameViewController.swift */,
+				7F4998281F72FD9700D2B5F4 /* GameScene.swift */,
+				7F4998291F72FD9700D2B5F4 /* FourthGameScene.swift */,
+				7F49982A1F72FD9700D2B5F4 /* ThirdGameScene.swift */,
+				7F49982B1F72FD9700D2B5F4 /* SecondGameScene.swift */,
 				56C0EEB41F72540B00323DEA /* NinethViewController.swift */,
 				56C0EEB81F72540B00323DEA /* WatchVideoViewController.swift */,
 				56FAA1301F71D8C900D0767C /* AppDelegate.swift */,
 				56FAA1341F71D8C900D0767C /* Actions.sks */,
-				56FAA1361F71D8C900D0767C /* GameScene.swift */,
-				56FAA1381F71D8C900D0767C /* GameViewController.swift */,
 				56FAA13A1F71D8C900D0767C /* Main.storyboard */,
 				56FAA13D1F71D8C900D0767C /* Assets.xcassets */,
+				7F4998311F730A6200D2B5F4 /* youwin.png */,
+				7F4998321F730A6200D2B5F4 /* youwin@2x.png */,
+				7F4998331F730A6200D2B5F4 /* youwin@3x.png */,
 				56C0EED51F72D33800323DEA /* a1@2x.png */,
 				56C0EED61F72D33800323DEA /* a2.png */,
 				56C0EED71F72D33800323DEA /* a3.png */,
@@ -303,10 +321,13 @@
 				56C0EEE41F72D33800323DEA /* a7.png in Resources */,
 				56C0EEE51F72D33800323DEA /* a8.png in Resources */,
 				56C0EEDE1F72D33800323DEA /* a1@2x.png in Resources */,
+				7F4998361F730A6200D2B5F4 /* youwin@3x.png in Resources */,
 				56FAA13C1F71D8C900D0767C /* Main.storyboard in Resources */,
+				7F4998351F730A6200D2B5F4 /* youwin@2x.png in Resources */,
 				56C0EEE31F72D33800323DEA /* a6.png in Resources */,
 				56FAA13E1F71D8C900D0767C /* Assets.xcassets in Resources */,
 				56C0EEE01F72D33800323DEA /* a3.png in Resources */,
+				7F4998341F730A6200D2B5F4 /* youwin.png in Resources */,
 				56FAA1411F71D8C900D0767C /* LaunchScreen.storyboard in Resources */,
 				56C0EEE11F72D33800323DEA /* a4.png in Resources */,
 				56FAA1351F71D8C900D0767C /* Actions.sks in Resources */,
@@ -336,15 +357,18 @@
 			files = (
 				56C0EEC11F72540B00323DEA /* SixthViewController.swift in Sources */,
 				56C0EEBF1F72540B00323DEA /* SecondViewController.swift in Sources */,
+				7F49982F1F72FD9700D2B5F4 /* ThirdGameScene.swift in Sources */,
 				56C0EEBE1F72540B00323DEA /* NinethViewController.swift in Sources */,
 				56C0EEC01F72540B00323DEA /* SeventhViewController.swift in Sources */,
+				7F49982E1F72FD9700D2B5F4 /* FourthGameScene.swift in Sources */,
+				7F49982C1F72FD9700D2B5F4 /* GameViewController.swift in Sources */,
 				56C0EEC21F72540B00323DEA /* WatchVideoViewController.swift in Sources */,
 				56C0EEBA1F72540B00323DEA /* FifthViewController.swift in Sources */,
-				56FAA1371F71D8C900D0767C /* GameScene.swift in Sources */,
-				56FAA1391F71D8C900D0767C /* GameViewController.swift in Sources */,
 				56C0EEBC1F72540B00323DEA /* FourthViewController.swift in Sources */,
 				56C0EEB91F72540B00323DEA /* EightViewController.swift in Sources */,
 				56C0EEBD1F72540B00323DEA /* firstViewController.swift in Sources */,
+				7F49982D1F72FD9700D2B5F4 /* GameScene.swift in Sources */,
+				7F4998301F72FD9700D2B5F4 /* SecondGameScene.swift in Sources */,
 				56FAA1311F71D8C900D0767C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

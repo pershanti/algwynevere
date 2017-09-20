@@ -22,14 +22,14 @@ class NinethViewController: UIViewController {
     //*****Button OULETS************//
     @IBOutlet weak var watch: UIButton!
     @IBOutlet weak var back: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+    
     @IBOutlet weak var messageLabel: UILabel!
     
     //User Input variables
     @IBOutlet weak var answer1: UITextField!
     
     //hold the output of the user
-    let correctResults = "Bananas"
+    let correctResults = "Dojo"
     var correct = true
     var triesCount = 0
     
@@ -60,13 +60,15 @@ class NinethViewController: UIViewController {
         } else {
             messageLabel.isHidden = false
             messageLabel.text = "You need to Study More"
-            tryAgain.isHidden = false
+           
             if triesCount == 3 {
                 watch.isHidden = false
             }
         }
         
         correct = true
+        performSegue(withIdentifier: "eigth", sender: nil)
+
         
     }
     

@@ -21,7 +21,7 @@ class firstViewController: UIViewController {
     @IBOutlet weak var watch: UIButton!
     
     @IBOutlet weak var solveChallenge2: UIButton!
-    @IBOutlet weak var tryAgain: UIButton!
+    
  
 
     @IBOutlet weak var messageLabel: UILabel!
@@ -66,7 +66,7 @@ class firstViewController: UIViewController {
         
         } else {
             messageLabel.text = "You Need to Study More"
-            tryAgain.isHidden = false
+           
             if triesCount == 3 {
                 watch.isHidden = false
             }
@@ -74,6 +74,17 @@ class firstViewController: UIViewController {
         results = [String]()
         correct = true
        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "watchSegue" {
+            let destination = segue.destination as! WatchVideoViewController
+            destination.videoSearch = "math operation in python"
+            
+        } else if segue.identifier == "nextSegue" {
+            _ = segue.destination as! SecondViewController
+        }
+        
     }
 
     @IBAction func tryAgainButton(_ sender: UIButton) {
