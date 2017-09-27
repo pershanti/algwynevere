@@ -53,7 +53,7 @@ class SixthViewController: UIViewController {
     
         if correct == true {
             messageLabel.isHidden = false
-            let message = "You answer correct"
+            let message = "Your answer is correct"
             messageLabel.text = message
             back.isHidden = false
             

@@ -47,7 +47,7 @@ class FourthViewController: UIViewController {
         
         if correct == true {
             messageLabel.isHidden = false
-            let message = "You answer correct"
+            let message = "Your answer is correct"
             messageLabel.text = message
             //add button to next challenge
             
@@ -61,7 +61,7 @@ class FourthViewController: UIViewController {
         }
         
         correct = true
-        performSegue(withIdentifier: "win", sender: nil)
+        performSegue(withIdentifier: "fifth", sender: nil)
 
         
     }

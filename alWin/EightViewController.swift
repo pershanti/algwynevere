@@ -73,6 +73,7 @@ class EightViewController: UIViewController {
         }
         results = [String]()
         correct = true
+        performSegue(withIdentifier: "win", sender: nil)
         
     }
     

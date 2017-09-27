@@ -58,7 +58,7 @@ class SecondViewController: UIViewController {
         }
         
         if correct == true {
-            let message = "You answer correct"
+            let message = "Your answer is correct"
             messageLabel.text = message
             messageLabel.isHidden = false
             
@@ -85,7 +85,7 @@ class SecondViewController: UIViewController {
         }
         else if segue.identifier == "home1"{
             let target = segue.destination as! GameViewController
-            target.showSecondScene()
+            target.secondScene()
         }
 
     }

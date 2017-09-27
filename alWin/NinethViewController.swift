@@ -67,7 +67,7 @@ class NinethViewController: UIViewController {
         }
         
         correct = true
-        performSegue(withIdentifier: "eigth", sender: nil)
+        performSegue(withIdentifier: "eighth", sender: nil)
 
         
     }

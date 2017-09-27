@@ -39,7 +39,7 @@ class FifthViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "home2"{
             let target = segue.destination as! GameViewController
-            target.showSecondScene()
+            target.thirdScene()
         }
     }
 
@@ -56,7 +56,7 @@ class FifthViewController: UIViewController {
         
         if correct == true {
             messageLabel.isHidden = false
-            let message = "You answer correct"
+            let message = "Your answer is correct"
             messageLabel.text = message
             //add button to next challenge
             
@@ -70,7 +70,7 @@ class FifthViewController: UIViewController {
         }
         
         correct = true
-        
+        performSegue(withIdentifier: "win", sender: nil)
         
     }
     

@@ -59,7 +59,7 @@ class firstViewController: UIViewController {
         }
         
         if correct == true {
-            let message = "You answer correct"
+            let message = "Your answer is correct"
             messageLabel.text = message
             solveChallenge2.isHidden = false
 
@@ -73,6 +73,7 @@ class firstViewController: UIViewController {
         }
         results = [String]()
         correct = true
+        performSegue(withIdentifier: "nextSegue", sender: nil)
        
     }
     

@@ -35,7 +35,7 @@ class SeventhViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "home3"{
             let target = segue.destination as! GameViewController
-            target.showSecondScene()
+            target.fourthScene()
         }
     }
 
